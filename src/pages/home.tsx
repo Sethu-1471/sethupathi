@@ -6,6 +6,7 @@ import sethupathi from "../assets/sethu.png";
 import Typewriter from "typewriter-effect";
 import { PhoneIcon } from "@heroicons/react/24/outline";
 import Testimonial from "../components/Testimonial";
+import { CarouselTransition } from "../components/Carosal";
 
 export default function Home() {
   return (
@@ -177,7 +178,8 @@ export default function Home() {
               Let's hear from the people I have worked with
             </Typography>
 
-            <Testimonial />
+            {/* <Testimonial /> */}
+            <CarouselTransition />
           </div>
         </div>
         {/* Footer */}
