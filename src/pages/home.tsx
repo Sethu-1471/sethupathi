@@ -43,15 +43,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 flex justify-center items-center py-5">
-            <Button
-              className="flex items-center gap-3"
-              color="white"
-              onClick={() => {
-                window.open(
-                  "https://www.linkedin.com/in/sethu-pathi-580560170/"
-                );
-              }}
-            >
+            <Button className="flex items-center gap-3" color="white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -71,10 +63,125 @@ export default function Home() {
             </div> */}
           </div>
         </div>
-        {/* Paste Here */}
-        <Typography className=" mr-4 cursor-pointer py-1.5  font-bold tracking-wide text-[30px]">
-          Site will be live at Febuary 13, 2024
-        </Typography>
+        <div className="flex flex-wrap gap-2 py-3">
+          <div className="flex-1 w-12">
+            <div className="bg-white flex items-center justify-center flex-col py-3">
+              <div className="bg-[#3C3F48] rounded-[50%] overflow-hidden w-[150px] h-[150px] mb-4">
+                <img
+                  className="w-full object-cover object-center"
+                  src={sethupathi}
+                  alt="Sethupathi"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <Typography className=" cursor-pointer font-bold  text-[18px]">
+                  P. Sethupathi
+                </Typography>
+                <Typography className="cursor-pointer font-normal tracking-wide text-[16px]">
+                  sethu1471@gmail.com
+                </Typography>
+                <Typography className="cursor-pointer font-normal tracking-wide text-[16px] flex gap-2">
+                  <PhoneIcon width={18} /> +91-9025548991
+                </Typography>
+                <Typography className="cursor-pointer font-normal tracking-wide text-[16px] flex gap-2">
+                  <PhoneIcon width={18} /> +91-8825598814
+                </Typography>
+              </div>
+            </div>
+            <div className="bg-white my-3 px-5 py-3">
+              <Typography className="cursor-pointer font-bold  text-[18px] underline decoration-sky-500">
+                Skills
+              </Typography>
+              <div className="flex flex-col gap-2 mt-3">
+                <Typography className="cursor-pointer font-normal tracking-wide text-[16px]">
+                  1. Javascript
+                </Typography>{" "}
+                <Typography className="cursor-pointer font-normal tracking-wide text-[16px]">
+                  1. Javascript
+                </Typography>{" "}
+                <Typography className="cursor-pointer font-normal tracking-wide text-[16px]">
+                  1. Javascript
+                </Typography>{" "}
+                <Typography className="cursor-pointer font-normal tracking-wide text-[16px]">
+                  1. Javascript
+                </Typography>
+              </div>
+            </div>
+          </div>
+          <div className="flex-auto w-64 bg-white px-5 py-3">
+            <Typography className="cursor-pointer font-bold  text-[18px] underline decoration-sky-500">
+              Me
+            </Typography>
+          </div>
+          <div className="flex-1 w-22">
+            <div className="bg-white px-5 py-3">
+              <Typography className="cursor-pointer font-bold  text-[18px] underline decoration-sky-500">
+                Codingmart Technology
+              </Typography>
+              <Typography className="cursor-pointer font-normal tracking-wide text-[14px]">
+                Senior Product Engineer
+              </Typography>
+              <Typography className="cursor-pointer font-normal tracking-wide text-[14px]">
+                2021-Present
+              </Typography>
+              <div className="mt-2">
+                <Typography className="cursor-pointer font-normal tracking-wide text-[13px]">
+                  1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </Typography>
+                <Typography className="cursor-pointer font-normal tracking-wide text-[13px]">
+                  1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </Typography>
+                <Typography className="cursor-pointer font-normal tracking-wide text-[13px]">
+                  1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </Typography>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-main flex flex-wrap my-3 px-5 py-3 flex-col">
+          {/* <Typography className=" cursor-pointer font-semibold text-white text-[20px]">
+            Why Me?
+          </Typography> */}
+          <div className="flex flex-wrap my-3 mx-3 justify-evenly">
+            <div className="flex justify-center flex-col items-center text-white">
+              <Typography className="cursor-pointer font-bold tracking-wide text-[26px]">
+                6k+
+              </Typography>
+              <Typography className="cursor-pointer font-medium tracking-wide text-[18px]">
+                Linkedin Followers{" "}
+              </Typography>
+            </div>
+
+            <div className="flex justify-center flex-col items-center text-white">
+              <Typography className="cursor-pointer font-bold tracking-wide text-[26px]">
+                3
+              </Typography>
+              <Typography className="cursor-pointer font-medium tracking-wide text-[18px]">
+                Worked with Startups
+              </Typography>
+            </div>
+
+            <div className="flex justify-center flex-col items-center text-white">
+              <Typography className="cursor-pointer font-bold tracking-wide text-[26px]">
+                5+
+              </Typography>
+              <Typography className="cursor-pointer font-medium tracking-wide text-[18px]">
+                Talks Delivered
+              </Typography>
+            </div>
+          </div>
+        </div>
+        {/* Testimonial */}
+        <div>
+          <div>
+            <Typography className=" cursor-pointer font-bold  text-[26px] mb-5">
+              Let's hear from the people I have worked with
+            </Typography>
+
+            {/* <Testimonial /> */}
+            <CarouselTransition />
+          </div>
+        </div>
         {/* Footer */}
         <div className="flex items-center justify-center my-5">
           <Typography className="cursor-pointer font-normal tracking-wide text-[13px]">
