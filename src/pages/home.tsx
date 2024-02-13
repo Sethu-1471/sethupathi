@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../components/Header";
 import { BreadcrumbsComponent } from "../components/Breadcrumbs";
-import { Button, Typography } from "@material-tailwind/react";
+import { Button, IconButton, Typography } from "@material-tailwind/react";
 import sethupathi from "../assets/sethu.png";
 import Typewriter from "typewriter-effect";
 import { PhoneIcon } from "@heroicons/react/24/outline";
@@ -11,7 +11,14 @@ import facebook from "../assets/facebook.svg";
 import linkedin from "../assets/linkedin.svg";
 import gmail from "../assets/gmail.svg";
 import whatsapp from "../assets/whatsapp.svg";
+import techstack from "../assets/techstacks.png";
 import Compaines from "../components/Compaines";
+import topmate from "../assets/compaines/topmate.svg";
+import La from "../components/La";
+import github from "../assets/github.svg";
+import npm from "../assets/npm.svg";
+import resume from "../assets/resume.svg";
+import x from "../assets/x.svg";
 
 export default function Home() {
   return (
@@ -19,7 +26,7 @@ export default function Home() {
       <Header />
       <div className="md:px-6">
         <BreadcrumbsComponent />
-        <div className="bg-main flex flex-wrap py-5">
+        <div className="bg-main flex flex-wrap py-5 h-[140px]">
           <div className="flex-1 py-5">
             <div className="flex justify-center align-middle items-center w-full h-full flex-col">
               <div className="w-[80%]">
@@ -48,7 +55,16 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 flex justify-center items-center py-3">
-            <Button className="flex items-center gap-3" color="white">
+            <Button
+              className="flex items-center gap-3"
+              color="white"
+              size="sm"
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/sethu-pathi-580560170/"
+                );
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -69,7 +85,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-wrap gap-2 py-3">
-          <div className="flex-1">
+          <div className="flex-1 md:max-w-[29%]">
             <div className="bg-white flex items-center justify-center flex-col py-3 bg-sub">
               <div className="bg-[#3C3F48] rounded-[50%] overflow-hidden w-[150px] h-[150px] mb-4 ">
                 <img
@@ -79,10 +95,10 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-2 text-center">
-                <Typography className="cursor-pointer font-bold  text-[18px]">
+                <Typography className="cursor-pointer font-bold text-text  text-[18px]">
                   P. Sethupathi
                 </Typography>
-                <Typography className="cursor-pointer font-normal tracking-wide text-[16px]">
+                <Typography className="cursor-pointer font-normal text-center tracking-wide text-[16px]">
                   sethu1471@gmail.com
                 </Typography>
                 <Typography className="cursor-pointer font-normal tracking-wide text-[16px] flex gap-2">
@@ -93,76 +109,136 @@ export default function Home() {
                 </Typography>
               </div>
             </div>
-            <div className="bg-white my-3 px-5 py-3">
+            <div className="bg-white my-3 px-5 py-3 flex flex-col justify-center items-center">
               <Typography className="cursor-pointer font-serif  text-[18px] decoration-sky-500">
+                Quick Links
+              </Typography>
+              <div className="flex gap-2 mt-2 flex-wrap">
+                <div className="flex items-end gap-4">
+                  <IconButton
+                    size="md"
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("https://github.com/Sethu-1471");
+                    }}
+                  >
+                    <img
+                      className="object-cover object-center w-[100%]"
+                      src={github}
+                      alt="github"
+                    />{" "}
+                  </IconButton>
+                  <IconButton
+                    size="md"
+                    variant="outlined"
+                    onClick={() => {
+                      window.open(
+                        "https://www.npmjs.com/~sethupathi-palanisamy"
+                      );
+                    }}
+                  >
+                    <img
+                      className="object-cover object-center w-[100%]"
+                      src={npm}
+                      alt="npm"
+                    />{" "}
+                  </IconButton>
+                  <IconButton
+                    size="md"
+                    variant="outlined"
+                    onClick={() => {
+                      window.open(
+                        "/src/assets/resume/Sethupathi_Resume.pdf",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    <img
+                      className="object-cover object-center w-[100%]"
+                      src={resume}
+                      alt="resume"
+                    />{" "}
+                  </IconButton>
+                </div>
+              </div>
+              <Typography className="cursor-pointer font-serif  text-[18px] decoration-sky-500 mt-3">
                 #stayconnected
               </Typography>
-              <div className="flex gap-2 mt-3">
+              <div className="flex gap-2 mt-2">
                 <img
                   className="object-cover object-center w-[25px]"
                   src={linkedin}
                   alt="linkedin"
+                  onClick={() => {
+                    window.open(
+                      "https://www.linkedin.com/in/sethu-pathi-580560170/"
+                    );
+                  }}
                 />
                 <img
                   className="object-cover object-center w-[25px]"
                   src={gmail}
                   alt="gmail"
+                  onClick={() => {
+                    window.open(
+                      "mailto:" +
+                        "sethu1471@gmail.com" +
+                        "?cc=" +
+                        "sethu1471@outlook.com" +
+                        "&subject=" +
+                        "REG: Queries via Portfolio" +
+                        "&body=" +
+                        "Hi Sethu, ..."
+                    );
+                  }}
                 />
                 <img
                   className="object-cover object-center w-[25px]"
                   src={facebook}
                   alt="facebook"
+                  onClick={() => {
+                    window.open("https://www.facebook.com/kongu.sethu.1471");
+                  }}
+                />
+                <img
+                  className="object-cover object-center w-[25px]"
+                  src={x}
+                  alt="x"
+                  onClick={() => {
+                    window.open("https://x.com/sethu_kgm");
+                  }}
                 />
                 <img
                   className="object-cover object-center w-[25px]"
                   src={instagram}
                   alt="instagram"
+                  onClick={() => {
+                    window.open("https://www.instagram.com/_.s_e_t_h_u._/");
+                  }}
                 />
                 <img
                   className="object-cover object-center w-[25px]"
                   src={whatsapp}
                   alt="whatsapp"
+                  onClick={() => {
+                    window.open("https://wa.me/+919025548991");
+                  }}
                 />
               </div>
             </div>
-            <div className="bg-white my-3 px-5 py-3">
-              <Typography className="cursor-pointer font-serif  text-[18px] decoration-sky-500">
-                Worked Skills
-              </Typography>
-              <div className="flex gap-2 mt-3">
-                <img
-                  className="object-cover object-center w-[25px]"
-                  src={linkedin}
-                  alt="linkedin"
-                />
-                <img
-                  className="object-cover object-center w-[25px]"
-                  src={gmail}
-                  alt="gmail"
-                />
-                <img
-                  className="object-cover object-center w-[25px]"
-                  src={facebook}
-                  alt="facebook"
-                />
-                <img
-                  className="object-cover object-center w-[25px]"
-                  src={instagram}
-                  alt="instagram"
-                />
-                <img
-                  className="object-cover object-center w-[25px]"
-                  src={whatsapp}
-                  alt="whatsapp"
-                />
-              </div>
-            </div>
+            {/* <div className="bg-white px-5 py-5">
+              <img
+                className="object-cover object-center w-[60%] spin-slow m-auto"
+                src={techstack}
+                alt="techstack"
+              />
+            </div> */}
           </div>
-          <div className="flex-auto w-64 bg-white px-5 py-3 leading-3">
+          <div className="flex-auto w-64 bg-white px-5 py-5 leading-5">
             <Typography className="cursor-pointer font-bold  text-[18px] text-text decoration-sky-500">
               Why Me?{" "}
             </Typography>
-            <Typography className="">
+            <Typography className="mt-2">
               As a seasoned software developer, I thrive on solving complex
               problems and creating innovative solutions that have a meaningful
               impact on businesses and users alike. With a track record of
@@ -181,9 +257,10 @@ export default function Home() {
                 Innovative Project Contributions:{" "}
               </Typography>
               - Played a pivotal role in creating an innovative Interview
-              Platform using cutting-edge technologies like WebRTC, Redis,
-              MongoDB, and Next.JS, demonstrating a commitment to staying at the
-              forefront of technology.
+              Platform using cutting-edge technologies like Node JS, Typescript,
+              Golang, Sql & NoSql, WebRTC, Redis, MongoDB, and Next.JS,
+              demonstrating a commitment to staying at the forefront of
+              technology.
               <Typography className="font-medium">
                 Global Collaboration and Client Engagement:{" "}
               </Typography>
@@ -213,38 +290,20 @@ export default function Home() {
               diverse projects and responsibilities.
             </Typography>
           </div>
-          {/* <div className="flex-1 w-22">
-            <div className="bg-white px-5 py-3">
-              <Typography className="cursor-pointer font-bold  text-[18px] underline decoration-sky-500">
-                Codingmart Technology
-              </Typography>
-              <Typography className="cursor-pointer font-normal tracking-wide text-[14px]">
-                Senior Product Engineer
-              </Typography>
-              <Typography className="cursor-pointer font-normal tracking-wide text-[14px]">
-                2021-Present
-              </Typography>
-              <div className="mt-2">
-                <Typography className="cursor-pointer font-normal tracking-wide text-[13px]">
-                  1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </Typography>
-                <Typography className="cursor-pointer font-normal tracking-wide text-[13px]">
-                  1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </Typography>
-                <Typography className="cursor-pointer font-normal tracking-wide text-[13px]">
-                  1. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                </Typography>
-              </div>
-            </div>
-          </div> */}
         </div>
-        <div>
+        <div className="mt-2">
           <Typography className=" cursor-pointer font-semibold  text-center text-[22px] mb-3">
             I have worked with many startups in India
           </Typography>
           <Compaines />
         </div>
-        <div className="bg-main flex flex-wrap my-3 px-5 py-3 flex-col">
+        <div className="mt-2">
+          <Typography className=" cursor-pointer font-semibold  text-center text-[22px] mb-3">
+            Service for Community
+          </Typography>
+          <La />
+        </div>
+        <div className="bg-main flex flex-wrap my-5 px-5 py-3 flex-col">
           {/* <Typography className=" cursor-pointer font-semibold text-white text-[20px]">
             Why Me?
           </Typography> */}
@@ -277,13 +336,36 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Connect With Me  */}
+        <div className="bg-white w-[100%] md:w-[70%] overflow-hidden m-auto px-5 py-5">
+          <Typography className="text-center font-[18px]">
+            "A skilled software developer possesses the logic of an architect,
+            the creativity of an artist, and the communication skills of a
+            storyteller."
+          </Typography>
+          <Typography className="cursor-pointer font-medium tracking-wide text-[18px] text-center my-4">
+            Schedule a call with me
+          </Typography>
+          <Button
+            className="flex items-center gap-3 bg-[#E44332] m-auto"
+            color="white"
+            onClick={() => {
+              window.open("https://topmate.io/sethupathi");
+            }}
+          >
+            <img
+              className="object-cover object-center w-[100px] stroke-white"
+              src={topmate}
+              alt="topmate"
+            />
+          </Button>
+        </div>
         {/* Testimonial */}
-        <div>
+        <div className="mt-3">
           <div>
-            <Typography className=" cursor-pointer font-bold  text-[26px] mb-5">
+            <Typography className=" cursor-pointer font-semibold  text-center text-[22px] mb-3">
               Let's hear from the people I have worked with
             </Typography>
-
             {/* <Testimonial /> */}
             <CarouselTransition />
           </div>
