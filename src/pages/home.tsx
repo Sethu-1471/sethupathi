@@ -148,7 +148,7 @@ export default function Home() {
                     variant="outlined"
                     onClick={() => {
                       window.open(
-                        "/src/assets/resume/Sethupathi_Resume.pdf",
+                        "/public/resume/Sethupathi_Resume.pdf",
                         "_blank"
                       );
                     }}
