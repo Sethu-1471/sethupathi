@@ -75,9 +75,12 @@ export function CarouselTransition() {
         </IconButton>
       )}
     >
-      {value.map((val) => {
+      {value.map((val, i) => {
         return (
-          <div className="relative h-full w-full bg-white px-[50px] flex flex-col justify-center items-center py-5">
+          <div
+            key={i}
+            className="relative h-full w-full bg-white px-[50px] flex flex-col justify-center items-center py-5"
+          >
             <div className="absolute right-9 top-0">
               <img
                 className="object-cover object-center w-[50px] opacity-10"
