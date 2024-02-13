@@ -147,10 +147,7 @@ export default function Home() {
                     size="md"
                     variant="outlined"
                     onClick={() => {
-                      window.open(
-                        "/resume/Sethupathi_Resume.pdf",
-                        "_blank"
-                      );
+                      window.open("/resume/Sethupathi_Resume.pdf", "_blank");
                     }}
                   >
                     <img
@@ -282,7 +279,7 @@ export default function Home() {
               <Typography className="font-medium">
                 Effective Collaboration and Mentorship: -{" "}
               </Typography>
-              Orchestrated and led talented teams, ensuring seamless
+              - Orchestrated and led talented teams, ensuring seamless
               collaboration and effective development, while also conducting
               technical interviews and providing mentorship. This condensed
               overview highlights key strengths, including leadership,
