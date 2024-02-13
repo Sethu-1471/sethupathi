@@ -20,7 +20,34 @@
 }
 
 .bg-main{
-  background-image: url(/src/assets/main-bg.svg);
-  background-repeat: no-repeat;
-  background-position: top;
+	background-image: url(/src/assets/main-bg.svg);
+	background-repeat: no-repeat;
+	background-position: top;
+  }
+
+  .bg-sub{
+	background-image: url(/src/assets/bg-sub.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;	
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+  }

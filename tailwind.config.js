@@ -10,6 +10,7 @@ export default withMT({
 				secondary: '#2E384D',
 				tertiary: '#F4F4F5',
 				navbar: '#1E2431',
+				text: '#522B65'
 			},
 		},
 	},

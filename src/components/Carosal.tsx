@@ -62,7 +62,7 @@ export function CarouselTransition() {
           <img
             className="object-cover object-center w-[50px] opacity-10"
             src={quotes}
-            alt="Sethupathi"
+            alt="quotes"
           />
         </div>
         <div className="bg-[#3C3F48] rounded-[50%] overflow-hidden w-[80px] h-[80px] mb-4">
